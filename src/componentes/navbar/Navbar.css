@@ -4,7 +4,7 @@ header {
   margin: 0;
   padding: 5px;
   background-color: #fecce3;
-  color: #2B378D;
+  color: hsl(233, 53%, 36%);
 }
 
 .brand {
