@@ -1,5 +1,5 @@
 
-const products = [
+const myProducts = [
     { id: 1, title: "Carpet Waves", stock: 3, size: "40 x 55 cm", description: "This is a unique, colorful hand tufted rug made from 100% New Zealand wool yarn in Monks fabric, backed with fiber glue and cotton canvas. It has a playful, funky pattern and an exclusive, stylish look. Made by the talented Estera Studio.", price: 2700, img: "/src/assets/Img/productos/alfombra1.jpg" },
     { id: 2, title: "Carpet Gaming", stock: 1, size: "70 x 35 cm", description: "Add color to your floor or wall with this unique, stylish and patterned rug! Specially made for kids play room.", price: 2450, img: "src/assets/Img/productos/alfombra2.png" },
     { id: 3, title: "Carpet Clara", stock: 2, size: "61 x 42 cm", description: "Add color to your floor or wall with this unique, stylish and patterned rug! It is hand tufted by the designer Estera Studio, making it one of a kind. The rug made of 100% acrylic yarn in Monk's fabric, backed with fiber glue and cotton canvas.", price: 1950, img: "src/assets/Img/productos/alfombra3.jpg" },
@@ -12,12 +12,12 @@ const products = [
     { id: 10, title: "Funghi (Green)", stock: 4, size: "39 x 27 cm", description: "The hand-tufted, colorful sponge rug from Estera Studio is made with a mix of different yarns (wool, acrylic and cotton). Each product is unique and covered with fiber glue and acrylic felt. Ready to hang and adorn your wall!", price: 450, img: "src/assets/Img/productos/mushroomAzu.png" },
     { id: 11, title: "Parasol (Beige)", stock: 5, size: "34 X 31 cm", description: "The hand-tufted, colorful sponge rug from Estera Studio is made with a mix of different yarns (wool, acrylic and cotton). Each product is unique and covered with fiber glue and acrylic felt. Ready to hang and adorn your wall!", price: 450, img: "src/assets/Img/productos/mushroommarron.JPG" },
     { id: 12, title: "Oyster (Pink))", stock: 2, size: "31 x 30 cm", description: "The hand-tufted, colorful sponge rug from Estera Studio is made with a mix of different yarns (wool, acrylic and cotton). Each product is unique and covered with fiber glue and acrylic felt. Ready to hang and adorn your wall!", price: 450, img: "src/assets/Img/productos/mushroompink.JPG" }
-];
+]
 
 export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products)
+            resolve(myProducts)
         }, 2000);
     })
 }
