@@ -1,9 +1,12 @@
-const ItemDetail = ({id, img, title, descrip}) => {
+import "./ItemDetail.css"
+
+const ItemDetail = ({id, img, title, size, description}) => {
   return (
-    <div key={id}>
-      <img src={img} alt={title} />
-      <h2>{title}</h2>
-      <p>{descrip}</p>
+    <div className="detail" key={id}>
+      <img className="detailImg" src={img} alt={title} />
+      <h2 className="detailTitle" >{title}</h2>
+      <i className="detailSize">{size}</i>
+      <p className="pDetail">{description}</p>
     </div>
   );
 };

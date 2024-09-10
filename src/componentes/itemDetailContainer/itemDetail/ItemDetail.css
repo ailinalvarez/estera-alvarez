@@ -1,0 +1,33 @@
+    /* violeta #2B378D;
+    rosa #fecce3; */
+
+    .detail {
+        border-style: solid;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fecce3;
+    }
+
+    .detailImg {
+        margin: 5px;
+        height: 40vh;
+        width: 60vh;
+    }
+
+    .detailTitle {
+        margin: 5px;
+        color: #2B378D;
+    }
+
+    .detailSize {
+        margin: 5px;
+        color: #2B378D;
+    }
+
+    .pDetail {
+        padding-left: 150px;
+        padding-right: 150px;
+        margin: 10px;
+    }

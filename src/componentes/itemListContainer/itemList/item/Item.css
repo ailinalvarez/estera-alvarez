@@ -7,13 +7,16 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 50vh;
-    width: 60vh;
+    height: 55vh;
+    width: 40vh;
 }
 
 img {
-    height: 30vh;
+    height: 25vh;
     border-radius: 2%;
+    border-color: #2B378D;
+    border-style: solid;
+    margin-bottom: 5px;
 }
 
 .itemButton {
@@ -23,4 +26,19 @@ img {
     font-size: 16px;
     padding: 4px;
     border-radius: 5%;
+    margin: 5px;
+}
+
+.itemTitle {
+    font-size: 20px;
+    margin: 3px;
+}
+
+.itemSize {
+    font-size: 18px;
+    margin: 2px;
+}
+
+.itemPrice {
+    font-size: 16px;
 }

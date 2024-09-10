@@ -1,3 +1,5 @@
 .itemList {
     background-color: hsl(233, 53%, 36%);
+    display: flex;
+    flex-wrap: wrap;
 }

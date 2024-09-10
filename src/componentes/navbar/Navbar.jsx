@@ -4,9 +4,8 @@ const Navbar = () => {
   return (
     <div>
       <header>
-        <div className="brand">
-          <h2>Estera Estudio</h2>
-          <h3>By Vir Delfino</h3>
+        <div>
+          <img className="logo" src="/src/assets/Img/barra/logo1.jpg" alt="Estera" />
         </div>
         <nav>
           <ul>

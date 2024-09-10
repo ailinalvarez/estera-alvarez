@@ -1,17 +1,20 @@
+/* rosa #fecce3;
+violeta #2b368c; */
+
 header {
   display: flex;
   justify-content: space-around;
   margin: 0;
   padding: 5px;
-  background-color: #fecce3;
-  color: hsl(233, 53%, 36%);
+  background-color: #2b368c;
+  color: #fecce3;
+  flex-direction: row;
+  align-items: center;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+.logo {
+  width: 40vh;
+  height: 10vh;
 }
 
 h2 {
