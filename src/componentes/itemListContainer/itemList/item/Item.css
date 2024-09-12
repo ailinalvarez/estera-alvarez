@@ -23,22 +23,28 @@ img {
     color: #fecce3;
     background-color: #2B378D;
     border: #fecce3;
-    font-size: 16px;
+    font-size: 17px;
     padding: 4px;
     border-radius: 5%;
     margin: 5px;
+    text-decoration: none;
 }
 
 .itemTitle {
-    font-size: 20px;
+    align-self: center;
+    font-size: 19px;
     margin: 3px;
+    padding: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .itemSize {
-    font-size: 18px;
+    font-size: 12px;
     margin: 2px;
+    padding: 2px;
 }
 
 .itemPrice {
-    font-size: 16px;
+    font-size: 13px;
+    padding: 3px;
 }

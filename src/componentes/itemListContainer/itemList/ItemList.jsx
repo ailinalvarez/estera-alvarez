@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 import Item from "./item/Item";
 import "./itemList.css"
 

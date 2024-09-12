@@ -17,19 +17,6 @@ header {
   height: 10vh;
 }
 
-h2 {
-  font-size: 22px;
-  padding: 0;
-  margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-h3 {
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
-
 ul {
   display: flex;
   flex-direction: row;
@@ -38,4 +25,10 @@ ul {
 li {
   list-style-type: none;
   padding: 10px;
+  text-decoration: none;
+}
+
+.cat {
+  text-decoration: none;
+  color: #fecce3;
 }
