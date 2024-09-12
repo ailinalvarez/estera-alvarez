@@ -5,7 +5,7 @@ const ItemDetail = ({id, img, title, size, description}) => {
     <div className="detail">
       <img className="detailImg" src={img} alt={title} />
       <h2 className="detailTitle" >{title}</h2>
-      <p>ID: asfasdfsdf{id}</p>
+      <p>ID:{id}</p>
       <i className="detailSize">{size}</i>
       <p className="pDetail">{description}</p>
     </div>

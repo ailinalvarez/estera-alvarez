@@ -2,8 +2,6 @@
     background-color: hsl(233, 53%, 36%);
     display: flex;
     flex-wrap: wrap;
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
 }
