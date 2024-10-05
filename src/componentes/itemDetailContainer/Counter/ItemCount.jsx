@@ -22,7 +22,7 @@ const removeItem = ()=> {
             <strong>{counter}</strong>
             <button onClick={addItem}> + </button>
 
-        <button onClick={()=>funcAdd(counter)}>Agregar a mi carrito</button>
+        <button onClick={()=>funcAdd(counter)}>Add to my basket</button>
 
         </div>
     ) 

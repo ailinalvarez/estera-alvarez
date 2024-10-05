@@ -4,6 +4,8 @@ import { useState } from "react"
 import { Link } from "react-router-dom";
 import {CartContext} from "../../../context/CartContext"
 import { useContext } from "react";
+import { toast } from "react-toastify";
+
 
 const ItemDetail = ({stock, id, img, title, size, price, description}) => {
 
@@ -11,13 +13,14 @@ const ItemDetail = ({stock, id, img, title, size, price, description}) => {
 
   const {addToCart} = useContext(CartContext)
 
-  const stockControl = () => {
+  const stockControl = (stock) => {
     setAddStock({stock})
-    console.log({stock})
+    console.log("Added Items" + {stock})
 
 
     const item = {id, title, price}
     addToCart (item, stock)
+    toast("Product added to your basket", {autoClose: 800, theme: "dark", position: "bottom-right",})
   }
 
   return (
@@ -28,7 +31,7 @@ const ItemDetail = ({stock, id, img, title, size, price, description}) => {
       <p className="pDetail">{description}</p>
 
       {
-        addStock > 0 ? (<Link to= "/cart">Finalizar compra</Link>) : (<ItemCount inicial={1} stock={stock} funcAdd={stockControl}></ItemCount>)
+        addStock > 0 ? (<Link to="/Cart"><h1>Finalizar compra </h1></Link>) : (<ItemCount inicial={1} stock={stock} funcAdd={stockControl}/>)
       }
     </div>
   )
