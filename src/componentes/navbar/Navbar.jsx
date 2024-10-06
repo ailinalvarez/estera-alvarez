@@ -12,8 +12,6 @@ const Navbar = () => {
         </Link>
         <nav>
           <ul>
-
-
             <li>
               <NavLink className="cat" to="/Category/Carpets">Carpets</NavLink>
             </li>

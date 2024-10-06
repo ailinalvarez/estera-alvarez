@@ -12,8 +12,6 @@ export const CartProvider = ({children}) => {
     const [total, setTotal] = useState(0)
     const [totalAmount, setTotalAmount] = useState(0)
 
-    console.log(cart);
-
 
     const addToCart = (item, amount) => {
         const itemFinder = cart.find((prod) => prod.item.id === item.id)
@@ -80,7 +78,6 @@ export const CartProvider = ({children}) => {
         swalWithBootstrapButtons.fire({
         title: "Cancelled",
         text: "Your items are safe :)",
-        icon: "error"
         });
         }
     })

@@ -15,7 +15,7 @@ const ItemDetail = ({stock, id, img, title, size, price, description}) => {
 
   const stockControl = (stock) => {
     setAddStock({stock})
-    console.log("Added Items" + {stock})
+
 
 
     const item = {id, title, price}

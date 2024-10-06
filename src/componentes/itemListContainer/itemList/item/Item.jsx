@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import "./Item.css"
 import { Link } from "react-router-dom";
 

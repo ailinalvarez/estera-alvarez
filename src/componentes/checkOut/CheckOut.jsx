@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { db } from "../../service/config";
 import {collection, addDoc, updateDoc, doc, getDoc} from "firebase/firestore"
+import "./checkOut.css" 
 
 const CheckOut = () => {
 
@@ -43,21 +44,6 @@ const CheckOut = () => {
         email
     }
 
-    // addDoc(collection(db, "orders"), order)
-    //     .then(docRef => {
-    //         setOrderId(docRef.id)
-    //         emptyCartOut()
-    //         setName("")
-    //         setLastName("")
-    //         setPhone("")
-    //         setEmail("")
-    //         setConfirmEmail("")
-    //     })
-    //     .catch(error => {
-    //         console.log("There was an error when we created the order", error)
-    //         setError("Error when creating the order")
-    //     })
-    // }
 
         Promise.all(
             order.items.map(async (productOrder) => {
