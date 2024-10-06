@@ -82,15 +82,20 @@ export const CartProvider = ({children}) => {
         text: "Your items are safe :)",
         icon: "error"
         });
-    }
-})
+        }
+    })
 
-
     }
+
+const emptyCartOut = () => {
+            setCart ([]);
+            setTotalAmount(0);
+            setTotal(0);
+}
 
     return (
         <CartContext.Provider 
-            value={{cart, total, totalAmount, addToCart, deleteItem, emptyCart}}
+            value={{cart, total, totalAmount, addToCart, deleteItem, emptyCart, emptyCartOut}}
         >
         {children}
         </CartContext.Provider>

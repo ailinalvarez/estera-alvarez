@@ -26,7 +26,7 @@ const Cart = () => {
       <h3>Amount of products: {totalAmount}</h3>
       <h3>Total price: ${total}</h3>
       <button onClick={()=> emptyCart()}>Empty cart</button>
-      <Link to="/CheckOut">That's all, go to check out</Link>
+      <Link to="/CheckOut"><button>That's all, go to check out</button></Link>
     </div>
   )
 }

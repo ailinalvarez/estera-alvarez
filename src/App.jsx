@@ -9,6 +9,7 @@ import Cart from "./componentes/cart/Cart";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import CheckOut from "./componentes/checkOut/CheckOut";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/Category/:idCategory' element={<ItemListContainer/>}/>
           <Route path='/Item/:id' element={<ItemDetailContainer/>}/>
           <Route path="/Basket" element={<Cart/>}></Route>
+          <Route path="/CheckOut" element={<CheckOut/>}/>
           <Route path="*" element={<h2>We are working for you, please send an email to esteras@studio.com</h2>}/>
         </Routes>
         <Footer />
