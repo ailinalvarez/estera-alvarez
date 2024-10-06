@@ -14,4 +14,4 @@ React Bootstrap
 - Add items to the cart
 - See the progress on the cart widget
 - Filtered products
-- Purchase an order with the buyers details and the selected products
+- Purchase an order with the buyer's details and the selected products
