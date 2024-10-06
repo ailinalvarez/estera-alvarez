@@ -1,13 +1,13 @@
 # Esteras Studio it's an ecommerce for the React JS course at CoderHouse
 
 ## Tecnologies & tools applied:
-Vite
-React
-React-Router-DOM
-Firebase
-Toastify
-Sweet Alert2
-React Bootstrap
+- Vite
+- React
+- React-Router-DOM
+- Firebase
+- Toastify
+- Sweet Alert2
+- React Bootstrap
 
 ### Functionalities
 - Products list
