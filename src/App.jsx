@@ -20,7 +20,7 @@ function App() {
           <Route path="/" element={<ItemListContainer greeting="Conoce nuestros productos" />} />
           <Route path='/Category/:idCategory' element={<ItemListContainer/>}/>
           <Route path='/Item/:id' element={<ItemDetailContainer/>}/>
-          <Route path="/Cart" element={<Cart/>}></Route>
+          <Route path="/Basket" element={<Cart/>}></Route>
           <Route path="*" element={<h2>We are working for you, please send an email to esteras@studio.com</h2>}/>
         </Routes>
         <Footer />

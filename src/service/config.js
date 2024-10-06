@@ -1,7 +1,25 @@
 
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+
+
+const firebaseConfig = {
+    apiKey: "AIzaSyB-IZAYocOcpZSswIgeqzN6n3vFIqA361w",
+    authDomain: "esteras-alvarez.firebaseapp.com",
+    projectId: "esteras-alvarez",
+    storageBucket: "esteras-alvarez.appspot.com",
+    messagingSenderId: "59706498818",
+    appId: "1:59706498818:web:1724cb38a1000d94852c1b"
+};
+
+
+const app = initializeApp(firebaseConfig);
+
+export const db = getFirestore(app)
+
+
 // const myProducts = [
 //     {
-//         id: 1,
 //         idCat: "Carpets",
 //         title: "Carpet Tina",
 //         stock: 3, size: "40 x 60 cm",
@@ -10,7 +28,6 @@
 //         img: "src/assets/Img/productos/alfombra1.jpg"
 //     },
 //     {
-//         id: 2,
 //         idCat: "Carpets",
 //         title: "Carpet Gaming",
 //         stock: 1,
@@ -19,7 +36,6 @@
 //         price: 2450, img: "src/assets/Img/productos/alfombra2.png"
 //     },
 //     {
-//         id: 3,
 //         idCat: "Carpets",
 //         title: "Carpet Clara",
 //         stock: 2,
@@ -28,7 +44,6 @@
 //         price: 1950, img: "src/assets/Img/productos/alfombra3.jpg"
 //     },
 //     {
-//         id: 4,
 //         idCat: "Carpets",
 //         title: "Carpet Simona",
 //         stock: 3,
@@ -38,7 +53,6 @@
 //         img: "src/assets/Img/productos/alfombra4.jpg"
 //     },
 //     {
-//         id: 5,
 //         idCat: "Bananas",
 //         title: "Banana",
 //         stock: 4, size: "36 x 10 cm",
@@ -47,7 +61,6 @@
 //         img: "src/assets/Img/productos/banana.png"
 //     },
 //     {
-//         id: 6,
 //         idCat: "Bananas",
 //         title: "Pink Banana",
 //         stock: 2,
@@ -57,7 +70,6 @@
 //         img: "src/assets/Img/productos/bananarosa.png"
 //     },
 //     {
-//         id: 7,
 //         idCat: "Coasters",
 //         title: "Flower Power",
 //         stock: 5,
@@ -67,7 +79,6 @@
 //         img: "src/assets/Img/productos/coasterFlores.png"
 //     },
 //     {
-//         id: 8,
 //         idCat: "Coasters",
 //         title: "Checkered",
 //         stock: 5,
@@ -77,7 +88,6 @@
 //         img: "src/assets/Img/productos/coastercuadrados.jpg"
 //     },
 //     {
-//         id: 9,
 //         idCat: "Coasters",
 //         title: "Spiral",
 //         stock: 6,
@@ -87,7 +97,6 @@
 //         img: "src/assets/Img/productos/coasterspiral.jpg"
 //     },
 //     {
-//         id: 10,
 //         idCat: "Mushrooms",
 //         title: "Funghi (Green)",
 //         stock: 4,
@@ -97,7 +106,6 @@
 //         img: "src/assets/Img/productos/mushroomAzu.png"
 //     },
 //     {
-//         id: 11,
 //         idCat: "Mushrooms",
 //         title: "Parasol (Beige)",
 //         stock: 5,
@@ -107,7 +115,6 @@
 //         img: "src/assets/Img/productos/mushroommarron.jpg"
 //     },
 //     {
-//         id: 12,
 //         idCat: "Mushrooms",
 //         title: "Oyster (Pink)",
 //         stock: 2,
@@ -118,29 +125,23 @@
 //     },
 // ];
 
-// export const getProducts = () => {
-//     return new Promise((resolve) => {
-//         setTimeout(() => {
-//             resolve(myProducts)
-//         }, 700)
+// import { collection, doc, writeBatch } from "firebase/firestore"
+
+// const uploadProducts = async () => {
+//     const batch = writeBatch(db)
+//     const productRef = collection(db, "products")
+
+//     myProducts.forEach((product) => {
+//         const newDoc = doc(productRef)
+//         batch.set(newDoc, product)
 //     })
+
+//     try {
+//         await batch.commit();
+//         console.log("prod upload successfully")
+//     } catch (error) {
+//         console.log("error", error)
+//     }
 // }
 
-// export const getAProduct = (id) => {
-//     return new Promise(resolve => {
-//         setTimeout(() => {
-//             const product = myProducts.find((item) => item.id === id)
-//             resolve(product)
-//         }, 500)
-//     })
-// }
-
-
-// export const getProdCategory = (idCategory) => {
-//     return new Promise(resolve => {
-//         setTimeout(() => {
-//             const producto = myProducts.filter(item => item.idCat === idCategory)
-//             resolve(producto)
-//         }, 1000)
-//     })
-// }
+// uploadProducts()

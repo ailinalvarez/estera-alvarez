@@ -10,8 +10,8 @@ const CartWidget = () => {
   return (
     <div className="cart-widget">
       
-      <Link to="/cart">
-        <img  className="basket" src="/src/assets/Img/barra/carrito.png" alt="carrito"/>
+      <Link to="/Basket">
+        <img  className="basket" src="/src/assets/Img/barra/carrito.png" alt="basket"/>
       </Link>
 
       {

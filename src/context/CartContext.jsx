@@ -25,7 +25,7 @@ export const CartProvider = ({children}) => {
 
         setTotal((prev) => prev + item.price * amount)
     } else {
-        const updatedCart = cart.map ((prod) => {
+        const updatedCart = cart.map((prod) => {
             if (prod.item.id === item.id) {
                 return {...prod, amount: prod.amount + amount}
             }else {
@@ -71,6 +71,9 @@ export const CartProvider = ({children}) => {
         text: "Your item has been deleted.",
         icon: "success"
         });
+            setCart ([]);
+            setTotalAmount(0);
+            setTotal(0);
     } else if (
         result.dismiss === Swal.DismissReason.cancel
     ) {
@@ -79,9 +82,6 @@ export const CartProvider = ({children}) => {
         text: "Your items are safe :)",
         icon: "error"
         });
-            setCart ([]);
-            setTotalAmount(0);
-            setTotal(0);
     }
 })
 
