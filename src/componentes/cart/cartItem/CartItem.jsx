@@ -9,9 +9,8 @@ const CartItem = ({item, amount}) => {
 
   return (
     <div className='cartItem'>
-        {/* <img src={img} alt={title} /> */}
         <h4>{item.title}</h4>
-        <p>Price {item.price} x {amount}</p>
+        <p>Price {item.price}kr x {amount}</p>
         <button onClick={()=>deleteItem(item.id)}>Delete</button>
     </div>
   )

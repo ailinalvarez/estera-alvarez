@@ -2,39 +2,35 @@
     rosa #fecce3; */
 
     .detail {
-
-        padding: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: #fecce3;
         color: #2B378D;
+        padding: 5px;
     }
-
 
     .detailImg {
         margin: 5px;
         height: 40vh;
-        width: 60vh;
+        border-color: #2B378D;
+        border-style: solid;
+        border-width: 3px;
     }
 
     .detailTitle {
-        margin: 8px;
         color: #2B378D;
+        font-weight: 600;
     }
 
     .detailSize {
-        margin: 10px;
         color: #2B378D;
-
     }
 
     .pDetail {
-        padding-left: 20px;
-        padding-right: 20px;
-        margin: 10px;
-        font-size: 16px;
-        line-height: 18px;
+        padding: 0 80px;
+        font-size: 11px;
+        line-height: 16px;
         text-align: justify;
         color: black;
     }

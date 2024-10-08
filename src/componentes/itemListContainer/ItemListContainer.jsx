@@ -4,39 +4,31 @@ import "./itemListContainer.css"
 import { useParams } from "react-router-dom"
 import { db } from "../../service/config"
 import {collection, getDocs, query, where} from "firebase/firestore"
-import "../loader/Loader.jsx"
+import Loader from "../loader/Loader"
+
 
 
 const ItemListContainer = ({greeting}) => {
 
 const [products, setProducts] = useState([])
 
-const [loading, setLoading] = useState(false)
+const [loading, setLoading] = useState(true)
 
 const {idCategory} = useParams()
-
-const getProducts = () => {
-  return new Promise ((resolve) => {
-      setTimeout (() => {
-        resolve()
-      }, 300)
-    })
-  }
 
 
 
 useEffect (() => {
-    setTimeout (()=> {
-}, 500)
+    setLoading(true)
     const myProducts = idCategory ? query(collection(db, "products"), where("idCat", "==", idCategory)) : (collection(db, "products"))
     getDocs(myProducts)
+
     .then(res => {
-      setLoading(true)
         const newPoducts =res.docs.map(doc => {
         const data = doc.data()
         return {id:doc.id, ...data}
     })
-      setProducts(newPoducts)
+    setProducts(newPoducts)
     })
     .catch(error => console.log(error))
     .finally(()=> {

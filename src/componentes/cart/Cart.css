@@ -5,9 +5,8 @@
     flex-direction: column;
     align-items: center;
     padding: 15px;
-
     justify-content: center;
-
+    height: 75vh;
 }
 
 .cart a {
@@ -29,18 +28,62 @@
 .cartProd {
     background-color: #2B378D;
     color: #fecce3;
+    height: 100%;
+}
+
+.cartTitle {
+    display: flex;
+    flex-direction: column;
 }
 
 .cartTitle h2 {
+    align-self: center;
     font-weight: 1000;
-    padding-bottom: 30px;
     color: #2B378D;
     background-color: #fecce3;
-    align-self: center;
+    padding: 0 100px;
+    border-radius: 2px;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
     background-color: #fecce3;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.total {
+    height: 80vh;
+    background-color: #2B378D;
+    color: #fecce3;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.total h3 {
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 2opx;
+    padding: 5px;
+}
+
+.total button {
+    background-color: #fecce3;
+    color: #2B378D;
+    border-style: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.total button:hover {
+    width: 350px;
+    font-size: 18px;
+    font-weight: 600;
 }

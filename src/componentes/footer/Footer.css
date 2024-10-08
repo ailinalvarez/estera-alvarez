@@ -1,17 +1,18 @@
 footer {
     background-color: #fecce3;
     width: 100%;
-    height: 100px;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 15px;
 
 }
 
 footer p {
-    padding: 5px;
     font-size: 8px;
+    margin: 8px;
 }
 
 .ig {

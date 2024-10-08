@@ -6,7 +6,7 @@ const Footer = () => {
       
         <p>Follow us</p>
         <a href="https://www.instagram.com/estera.studio/">
-          <img className="ig" src="src/assets/Img/barra/instagram.png" alt="Estera" />
+          <img className="ig" src="../../src/assets/Img/barra/instagram.png" alt="Estera" />
         </a>
         <p>© 2023 Estera Studio by Virginia Delfino</p>
     </footer>);
