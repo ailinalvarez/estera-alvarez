@@ -78,18 +78,21 @@ const CheckOut = () => {
     })
     }
     return (
-        <div>
-            <h2>Check Out</h2>
+        <div className="checkOut">
+            <h2>--- Check Out ---</h2>
             <form onSubmit={formController}>
-                {
+                <div className="selectedProd">
+                    {
                     cart.map(product => (
-                        <div key={product.item.id}>
-                            <p>{product.item.title}</p>
-                            <p>{product.amount} x {product.item.price}kr </p>
-                            <p>{product.item.price}kr</p>
+                        <div className="product" key={product.item.id}>
+                            <strong>{product.item.title}</strong>
+                            <p>{product.amount} x {product.item.price} kr</p>
+                            <p>{product.item.price} kr</p>
                         </div>
                     ))
                 }
+                </div> 
+                <div className="form">
                 <div>
                     <label htmlFor="">Name</label>
                     <input type="text" onChange={(e)=> setName(e.target.value)} value={name}/>
@@ -118,6 +121,7 @@ const CheckOut = () => {
                 {
                     orderId && <strong> Thank you for supporting my tufting, your order number is: {orderId}</strong>
                 }
+                </div>
             </form>
         </div>
     )

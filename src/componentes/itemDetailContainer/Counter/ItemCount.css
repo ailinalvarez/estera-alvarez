@@ -1,0 +1,29 @@
+.contador {
+    color: #fecce3;
+    background-color: #2B378D;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contador button {
+    margin: 3px;
+    color: #2B378D;
+    background-color: #fecce3;
+    border-color: transparent;
+    border-radius: 3px;
+    border-style: solid;
+    padding: 5px;
+}
+
+.add {
+    transition: 0.3s;
+    opacity: 0.9;
+}
+
+.add:hover {
+    opacity: 2
+}

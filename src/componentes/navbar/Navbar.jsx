@@ -11,17 +11,18 @@ const Navbar = () => {
           <img className="logoEstera" src="/src/assets/Img/barra/logo1.jpg" alt="Estera" />
         </Link>
         <nav>
-          <ul>
-            <li>
+          <ul className="bar">
+            <li >
               <NavLink className="cat" to="/Category/Carpets">Carpets</NavLink>
             </li>
-            <li>
+            <li >
               <NavLink className="cat" to="/Category/Coasters">Coaster</NavLink>
             </li>
             <li>
               <NavLink className="cat" to="/Category/Bananas">Bananas</NavLink>
             </li>
-            <li><NavLink className="cat" to="/Category/Mushrooms">Mushrooms</NavLink>
+            <li>
+              <NavLink className="cat" to="/Category/Mushrooms">Mushrooms</NavLink>
             </li>
           </ul>
         </nav>

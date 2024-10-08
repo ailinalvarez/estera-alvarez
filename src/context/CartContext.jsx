@@ -47,54 +47,56 @@ export const CartProvider = ({children}) => {
 
     const emptyCart = () => {
 
-    const swalWithBootstrapButtons = Swal.mixin({
-    customClass: {
-    confirmButton: "btn btn-success",
-    cancelButton: "btn btn-danger"
-    },
-    buttonsStyling: false
-    });
-    swalWithBootstrapButtons.fire({
-    title: "Are you sure?",
-    text: "You won't be able to revert this!",
-    icon: "warning",
-    showCancelButton: true,
-    confirmButtonText: "Yes, delete it!",
-    cancelButtonText: "No, please cancel!",
-    reverseButtons: true
-    }).then((result) => {
-    if (result.isConfirmed) {
-        swalWithBootstrapButtons.fire({
-        title: "Deleted!",
-        text: "Your item has been deleted.",
-        icon: "success"
+        const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+        confirmButton: "btn btn-success",
+        cancelButton: "btn btn-danger"
+        },
+        buttonsStyling: false
         });
-            setCart ([]);
-            setTotalAmount(0);
-            setTotal(0);
-    } else if (
-        result.dismiss === Swal.DismissReason.cancel
-    ) {
         swalWithBootstrapButtons.fire({
-        title: "Cancelled",
-        text: "Your items are safe :)",
-        });
-        }
-    })
+        title: "Are you sure?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Yes, delete it!",
+        cancelButtonText: "No, cancel!",
+        reverseButtons: true
+        }).then((result) => {
+        if (result.isConfirmed) {
+            swalWithBootstrapButtons.fire({
+            title: "Deleted!",
+            text: "The items has been deleted.",
+            icon: "success"
+            });
+                setCart ([]);
+                setTotalAmount(0);
+                setTotal(0);
+        } else if (
+            result.dismiss === Swal.DismissReason.cancel
+        ) {
+            swalWithBootstrapButtons.fire({
+            title: "Cancelled",
+            text: "Your items are safe =)",
+            });
+            }
+        })
 
     }
 
-const emptyCartOut = () => {
-            setCart ([]);
-            setTotalAmount(0);
-            setTotal(0);
-}
+    const emptyCartOut = () => {
+                setCart ([]);
+                setTotalAmount(0);
+                setTotal(0);
+    }
+
 
     return (
-        <CartContext.Provider 
-            value={{cart, total, totalAmount, addToCart, deleteItem, emptyCart, emptyCartOut}}
-        >
-        {children}
-        </CartContext.Provider>
+        <div className="cartContext">
+            <CartContext.Provider 
+                value={{cart, total, totalAmount, addToCart, deleteItem, emptyCart, emptyCartOut}}
+            >
+            {children}
+            </CartContext.Provider>
+        </div>
     )
 }

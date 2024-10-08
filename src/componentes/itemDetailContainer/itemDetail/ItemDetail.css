@@ -38,3 +38,13 @@
         text-align: justify;
         color: black;
     }
+
+    .endPurchase {
+        color: #2B378D;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .endPurchase:hover {
+        font-size: 18px;
+    }

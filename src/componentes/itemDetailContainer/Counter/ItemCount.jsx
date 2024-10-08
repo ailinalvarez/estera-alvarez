@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "./ItemCount.css"
 
 const ItemCount = ({inicial, stock, funcAdd}) => {
 
@@ -17,12 +18,12 @@ const removeItem = ()=> {
 }
 
     return (
-        <div>
-            <button onClick={removeItem}> - </button>
+        <div className="contador">
+            <button  onClick={removeItem}><strong> - </strong></button>
             <strong>{counter}</strong>
-            <button onClick={addItem}> + </button>
+            <button  onClick={addItem}><strong> + </strong></button>
 
-        <button onClick={()=>funcAdd(counter)}>Add to my basket</button>
+        <button className="add" onClick={()=>funcAdd(counter)}><strong>Add to my basket</strong></button>
 
         </div>
     ) 

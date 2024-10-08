@@ -5,7 +5,8 @@ header {
   display: flex;
   justify-content: space-around;
   margin: 0;
-  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #2b368c;
   color: #fecce3;
   flex-direction: row;
@@ -13,22 +14,25 @@ header {
 }
 
 .logoEstera {
-  width: 40vh;
+  width: 30vh;
   height: 10vh;
 }
 
-ul {
+.bar {
   display: flex;
   flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
+
 
 li {
   list-style-type: none;
-  padding: 10px;
   text-decoration: none;
 }
 
 .cat {
   text-decoration: none;
   color: #fecce3;
+  padding: 5px;
 }

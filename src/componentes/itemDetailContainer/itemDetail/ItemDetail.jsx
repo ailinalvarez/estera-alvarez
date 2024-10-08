@@ -14,7 +14,7 @@ const ItemDetail = ({stock, id, img, title, size, price, description}) => {
   const {addToCart} = useContext(CartContext)
 
   const stockControl = (stock) => {
-    setAddStock({stock})
+    setAddStock(stock)
 
 
 
@@ -31,7 +31,7 @@ const ItemDetail = ({stock, id, img, title, size, price, description}) => {
       <p className="pDetail">{description}</p>
 
       {
-        addStock > 0 ? (<Link to="/Cart"><h1>Finalizar compra </h1></Link>) : (<ItemCount inicial={1} stock={stock} funcAdd={stockControl}/>)
+        addStock > 0 ? (<Link to="/Basket" className="endPurchase">Take me to my basket =)</Link>) : (<ItemCount inicial={1} stock={stock} funcAdd={stockControl}/>)
       }
     </div>
   )
