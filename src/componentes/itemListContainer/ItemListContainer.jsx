@@ -26,7 +26,8 @@ const getProducts = () => {
 
 
 useEffect (() => {
-
+    setTimeout (()=> {
+}, 500)
     const myProducts = idCategory ? query(collection(db, "products"), where("idCat", "==", idCategory)) : (collection(db, "products"))
     getDocs(myProducts)
     .then(res => {
