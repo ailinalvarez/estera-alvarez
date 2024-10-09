@@ -41,7 +41,7 @@ export const CartProvider = ({children}) => {
         const updatedCart = cart.filter((prod) => prod.item.id !== id)
 
     setCart (updatedCart)
-    setTotalAmount((prev) = prev - deletedItem.amount)
+    setTotalAmount((prev) => prev - deletedItem.amount)
     setTotal((prev) => prev - deletedItem.item.price * deletedItem.amount)
     }
 
