@@ -15,3 +15,5 @@
 - See the progress on the cart widget
 - Filtered products
 - Purchase an order with the buyer's details and the selected products
+
+Deployed : https://estera-alvarez.netlify.app/
