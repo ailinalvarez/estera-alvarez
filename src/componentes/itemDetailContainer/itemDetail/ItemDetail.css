@@ -7,15 +7,14 @@
         align-items: center;
         background-color: #fecce3;
         color: #2B378D;
-        padding: 5px;
+        padding: 60px;
     }
 
     .detailImg {
         margin: 5px;
-        height: 40vh;
-        border-color: #2B378D;
-        border-style: solid;
-        border-width: 3px;
+        height: 30rem;
+        border: #2B378D solid 3px;
+        border-radius: 3px;
     }
 
     .detailTitle {
@@ -25,12 +24,13 @@
 
     .detailSize {
         color: #2B378D;
+        font-size: 20px;
     }
 
+
     .pDetail {
-        padding: 0 80px;
-        font-size: 11px;
-        line-height: 16px;
+        padding: 0 100px;
+        font-size: 25px;
         text-align: justify;
         color: black;
     }
@@ -39,8 +39,10 @@
         color: #2B378D;
         font-weight: bold;
         text-decoration: none;
+        font-size: 25px;
+        margin-top: 20px;
     }
 
     .endPurchase:hover {
-        font-size: 18px;
+        font-size: 30px;
     }

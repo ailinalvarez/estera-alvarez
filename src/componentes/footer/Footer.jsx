@@ -8,7 +8,7 @@ const Footer = () => {
         <a href="https://www.instagram.com/estera.studio/">
           <img className="ig" src="/Img/barra/instagram.png" alt="Estera" />
         </a>
-        <p>© 2023 Estera Studio by Virginia Delfino</p>
+        <p className="cw">© 2023 Estera Studio by Virginia Delfino</p>
     </footer>);
 };
 

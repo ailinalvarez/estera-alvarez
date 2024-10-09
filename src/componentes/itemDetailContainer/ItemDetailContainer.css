@@ -3,5 +3,6 @@
 
     .itemDetailContainer {
         background-color: #2B378D;
-        padding: 15px;
+        padding: 0 70px;
+        height: 100%;
     }

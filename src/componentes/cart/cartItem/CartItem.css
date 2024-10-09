@@ -8,18 +8,30 @@
     margin: 15px;
     border-radius: 5px;
     height: 100%;
+    width: 20rem;
+}
+
+.cartItem h4 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.cartItem p {
+    font-size: 20px;
 }
 
 .cartItem button {
+    font-size: 20px;
+    font-weight: 800;
     background-color: #fecce3;
     color: #2b368c;
-    padding: 3px;
+    padding: 10px;
     border-style: none;
     border-radius: 3px;
     transition: 0.3s;
 }
 
 .cartItem button:hover {
-    height: 30px;
-    width: 60px;
+    height: 60px;
+    width: 100px;
 }

@@ -19,9 +19,9 @@ const removeItem = ()=> {
 
     return (
         <div className="contador">
-            <button  onClick={removeItem}><strong> - </strong></button>
+            <button className="menos" onClick={removeItem}><strong> - </strong></button>
             <strong>{counter}</strong>
-            <button  onClick={addItem}><strong> + </strong></button>
+            <button className="mas" onClick={addItem}><strong> + </strong></button>
 
         <button className="add" onClick={()=>funcAdd(counter)}><strong>Add to my basket</strong></button>
 

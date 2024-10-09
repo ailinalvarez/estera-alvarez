@@ -12,7 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     background-color: #2B378D;
-    padding: 15px;
+    padding: 10px;
     justify-content: space-evenly;
     border-radius: 10px;
 }
@@ -26,20 +26,22 @@ form {
 .checkOut h2 {
     font-weight: 900;
     align-self: center;
-    margin: 10px;
+    margin: 40px;
+    font-size: 50px;
 }
 
 .product {
     background-color: #fecce3;
     color: #2B378D;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    margin: 5px;
+    margin: 25px;
     justify-content: space-evenly;
     align-items: center;
-    width: 150px;
+    width: 15rem;
     border-radius: 5px;
+    font-size: 20px;
 }
 
 .product p {
@@ -51,18 +53,22 @@ form {
     display: flex;
     flex-direction: column;
     align-items: end;
-    margin: 10px;
+    margin: 30px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 input {
     margin: 5px 10px;
     background-color: #2B378D;
     border-style: none;
-    color: aliceblue;
+    color: #fecce3;
     padding: 3px;
     transition: 0.3;
     opacity: 0.9;
     border-radius: 3px;
+    outline: #fecce3;
+    font-size: 20px;
 }
 
 input:hover {
@@ -77,12 +83,12 @@ input:hover {
     border-style: none;
     opacity: 0.8;
     transition: 0.3s;
-    margin-top: 10px;
+    margin-top: 30px;
     align-self: center;
 }
 
 .form button:hover {
     opacity: 1;
-    width: 200px;
-    height: 30px;
+    width: 25rem;
+    height: 4rem;
 }

@@ -86,8 +86,8 @@ const CheckOut = () => {
                     cart.map(product => (
                         <div className="product" key={product.item.id}>
                             <strong>{product.item.title}</strong>
-                            <p>{product.amount} x {product.item.price} kr</p>
-                            <p>{product.item.price} kr</p>
+                            <p>{product.amount} x {product.item.price}kr</p>
+                            <p>{product.item.price}kr</p>
                         </div>
                     ))
                 }

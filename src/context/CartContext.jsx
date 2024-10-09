@@ -65,8 +65,7 @@ export const CartProvider = ({children}) => {
         if (result.isConfirmed) {
             swalWithBootstrapButtons.fire({
             title: "Deleted!",
-            text: "The items has been deleted.",
-            icon: "success"
+            text: "The items has been deleted."        
             });
                 setCart ([]);
                 setTotalAmount(0);
@@ -91,7 +90,7 @@ export const CartProvider = ({children}) => {
 
 
     return (
-        <div className="cartContext">
+        <div>
             <CartContext.Provider 
                 value={{cart, total, totalAmount, addToCart, deleteItem, emptyCart, emptyCartOut}}
             >

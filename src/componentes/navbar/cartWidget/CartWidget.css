@@ -1,15 +1,16 @@
 .cart-widget {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: baseline;
 }
 
 .basket {
-  height: 6vh;
+  height: 30px;
   margin-right: 5px;
 }
 
 span {
-  font-size: 3vh;
-  align-self: flex-end;
+  font-size: 20px;
+  align-self: center;
 }
