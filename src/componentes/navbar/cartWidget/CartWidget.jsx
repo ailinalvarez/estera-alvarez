@@ -11,7 +11,7 @@ const CartWidget = () => {
     <div className="cart-widget">
       
       <Link to="/Basket">
-        <img  className="basket" src="/src/assets/Img/barra/carrito.png" alt="basket"/>
+        <img  className="basket" src="/Img/barra/carrito.png" alt="basket"/>
       </Link>
 
       {
